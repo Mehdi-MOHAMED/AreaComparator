@@ -1,1 +1,1 @@
-# AreaComparator
+AreaComparator
