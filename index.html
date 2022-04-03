@@ -4,155 +4,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area22Comparator</title>
+    <title>AreaComparator</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"><!-- Roboto -->
-    <script src="https://kit.fontawesome.com/04ce6e218b.js" crossorigin="anonymous"></script> <!-- cdnjs.cloudflare = le lien pour l'insertion des icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"><!-- cdnjs.cloudflare = le lien pour l'insertion des icones -->
+    <script src="https://kit.fontawesome.com/04ce6e218b.js" crossorigin="anonymous"></script><!-- cdnjs.cloudflare = le lien pour l'insertion des icones -->
 </head>
 <body>
+
   <div class="container">
 
-    <header>
-      <div class ="header1">
-              <a class="first" href="#">Area Comparator</a>
-              <div class="www_com">.com</div>
-      </div>
-    </header>
+    <!--Header-->
 
-    <!--SpaceAdLeft-->
+      <header>
 
-      <div id="ad1"></div>
+        <div class ="header1" href="#">
+                <a class="first" >Area Comparator<span class="com">.com</span></a>
+        </div>
 
-    <!--ArreyLeft-->
+      </header>
 
-      <div id="arreyLeft">
-        <div id="selection1">Sélection 1</div>
-        <div id="arrey1">
-          <div id="arrey1Text">
-            <br>
-            Continent :<br><br>Pays :<br><br>Région :<br><br>Département :<br><br>Ville :<br><br><br>Superficie :<br><br>Population :<br><br>Densité :<br><br><br>Lien Google :<br><br><br>Lien Wikipedia :<br><br>
+      <!--space1-->
+
+        <div id="bigSpace1"></div>
+
+      <!--leftUp-->
+
+        <div id="leftUp">
+          <div id="leftUpDown">
+              <button class="leftUpDownCenterCenter" href ="#">
+                <span class="material-icons-outlined">account_circle</span>
+              </button>
           </div>
         </div>
-      </div>
 
-    <!--NoSpaceLeft-->
+      <!--leftDown-->
 
-      <div id="noSpace1"></div>
-
-    <!--CenterUp-->
-
-      <div id="centerUp">
-
-        <!--centerUpLeft-->
-
-          <div id="centerUpLeft">
-            <div id="centerUpLeftIcon"><i class="fa-solid fa-user"></i></div>
-          </div>
-
-        <!--centerUpCenter-->
-
-          <div id="centerUpCenter">
-            <div id="centerUpCenterLeft">
-              <div id="centerUpCenterLeftLeft"><i class="fa-solid fa-magnifying-glass"></i></div>
-              <div id="centerUpCenterLeftRight"><input id="searchbar1" onkeyup="" type="text" name="search1" placeholder="Recherhe 1"></div>
-            </div>
-            <div id="centerUpCenterCenter"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
-            <div id="centerUpCenterRight"><div id="centerUpCenterRightLeft"><i class="fa-solid fa-magnifying-glass"></i></div>
-              <div id="centerUpCenterRightRight"><input id="searchbar2" onkeyup="" type="text" name="search2" placeholder="Recherche 2"></div>
-            </div>
-          </div>
-
-        <!--centerUpRight-->
-
-          <div id="centerUpRight">
-            <div id="centerUpRightIcon"><i class="fa-solid fa-star"></i></div>
-          </div>
-
-      </div>
-
-    <!--CenterDown-->
-
-      <div id="centerDown">
-
-          <!--CenterDownUp-->
-
-            <div id="centerDownUp">{{}sélection1} {est} {x} fois {plus/moins} {grand/petit} que {{}sélection2}. <br> {{}sélection1} {est} {x} fois {plus/moins}  peuplé que {{}sélection2}.</div>
-
-          <!--CenterDownCenter-->
-
-            <div id="centerDownCenter"><img src="image/WorldMap.png" alt=""></div>
-
-          <!--CenterDownDown-->
-
-              <div id="centerDownDown">
-
-                <!--CenterDownDownUp-->
-
-                  <div id="centerDownDownUp">
-
-                    <div id="centerDownDownUpLeft">
-                      <div id="centerDownDownUpLeftIcon"><i class="fa-solid fa-share-nodes"></i></div>
-                    </div>
-
-                    <div id="centerDownDownUpCenter">
-                      <div id="centerDownDownUpCenterIcon"><i class="fa-solid fa-star"></i></div>
-                    </div>
-
-                    <div id="centerDownDownUpRight">
-                      <div id="centerDownDownUpRightIcon"><i class="fa-solid fa-expand"></i></div>
-                    </div>
-
+        <div id="leftDown">
+            <div id="leftDownUp">
+              <div id="leftDownUpCenter">
+                <div id="leftDownUpCenterContainer">
+                  <div class="leftDownUpCenterContainerLeft">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
-
-                <!--centerDownDownDown-->
-
-                  <div id="centerDownDownDown">
-
-                    <div id="result1">Sélection 1</div>
-                    <div id="result2">Sélection 2</div>
-                    <div id="comparator">Comparateur</div>
-                    <div id="worldMap">Carte Monde</div>
-                  
+                  <div id="leftDownUpCenterContainerCenter">
+                    <input type="text" id="searchRight">
                   </div>
+                  <button class="leftDownUpCenterContainerRight">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
             </div>
-      </div>
 
-    <!--ArreyRight-->
+            <div id="leftDownDown">
+              <div id="leftDownDownContainer">
+                <div id="leftDownDownContainerUp">
+                  <div id="leftDownDownContainerUp1">
+                    <div id="leftDownDownContainerUp11">Continent : </div>
+                    <div id="leftDownDownContainerUp12">Country : </div>
+                  </div>
+                  <div id="leftDownDownContainerUp2">
+                    <div id="leftDownDownContainerUp21">Region : </div>
+                    <div id="leftDownDownContainerUp22">Department : </div>
+                  </div>
+                  <div id="leftDownDownContainerUp3">
+                    <div id="leftDownDownContainerUp31">City : </div>
+                  </div>
+                  <div id="leftDownDownContainerUp4">
+                    <div id="leftDownDownContainerUp41">Area : </div>
+                    <div id="leftDownDownContainerUp42">Population : </div>
+                    <div id="leftDownDownContainerUp43">Density : </div>
+                  </div>
+                </div>
+                <div id="leftDownDownContainerDown">
+                  <a id="leftDownDownContainerDown1" href="#">Google</a>
+                  <a id="leftDownDownContainerDown2" href="#">Wikipedia</a>
+                </div>
+              </div>
+            </div>
 
-      <div id="arreyRight">
-        <div id="selection2">Sélection 2</div>
-        <div id="arrey2">
-          <div id="arrey2Text">
-            <br>
-            Continent :<br><br>Pays :<br><br>Région :<br><br>Département :<br><br>Ville :<br><br><br>Superficie :<br><br>Population :<br><br>Densité :<br><br><br>Lien Google :<br><br><br>Lien Wikipedia :<br><br>
+        </div>
+
+      <!--space2-->
+
+        <div id="smallSpace1"></div>
+
+      <!--centerUp-->
+
+        <div id="centerUp">
+          <div id="centerUpContainer"></div>
+        </div>
+
+      <!--centerCenter-->
+      
+        <div id="centerCenter"></div>
+
+      <!--centerDown-->
+
+        <div id="centerDown"></div>
+
+      <!--rightUp-->
+
+        <div id="rightUp">
+          <div id="rightUpDown">
+              <button class="rightUpDownCenterCenter" href ="#">
+                <span class="material-icons-outlined">stars</span>
+              </button>
           </div>
         </div>
-      </div>
 
-    <!--NoSpaceRight-->
+      <!--rightDown-->
 
-      <div id="noSpace2"></div>
+        <div id="rightDown">
+            <div id="rightDownUp">
+              <div id="rightDownUpCenter">
+                <div id="rightDownUpCenterContainer">
+                  <div class="rightDownUpCenterContainerLeft">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div id="rightDownUpCenterContainerCenter">
+                    <input type="text" id="searchRight">
+                  </div>
+                  <button class="rightDownUpCenterContainerRight">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-    <!--SpaceAdRight-->
+            <div id="rightDownDown">
+              <div id="rightDownDownContainer">
+                <div id="rightDownDownContainerUp">
+                  <div id="rightDownDownContainerUp1">
+                    <div id="rightDownDownContainerUp11">Continent : </div>
+                    <div id="rightDownDownContainerUp12">Country : </div>
+                  </div>
+                  <div id="rightDownDownContainerUp2">
+                    <div id="rightDownDownContainerUp21">Region : </div>
+                    <div id="rightDownDownContainerUp22">Department : </div>
+                  </div>
+                  <div id="rightDownDownContainerUp3">
+                    <div id="rightDownDownContainerUp31">City : </div>
+                  </div>
+                  <div id="rightDownDownContainerUp4">
+                    <div id="rightDownDownContainerUp41">Area : </div>
+                    <div id="rightDownDownContainerUp42">Population : </div>
+                    <div id="rightDownDownContainerUp43">Density : </div>
+                  </div>
+                </div>
+                <div id="rightDownDownContainerDown">
+                  <a id="rightDownDownContainerDown1" href="#"><p>Google</p></a>
+                  <a id="rightDownDownContainerDown2" href="#">Wikipedia</a>
+                </div>
+              </div>
+            </div>
 
-      <div id="ad2"></div>
-      <div id="nav">
+        </div>
+
+      <!--space3-->
+
+        <div id="smallSpace2"></div>
+
+      <!--space4-->
+
+        <div id="bigSpace2"></div>
 
     <!--Footer-->
 
-      <div id="footer">
-        <div id="mentions">Mentions</div>
-        <div id="conditions">Conditions</div>
-        <div id="contact">Contact</div>
-      </div>
-      <div id="menu"><i class="fa-solid fa-bars"></i></div>
-    </div>
+      <footer>
+
+        <nav id="navBarfooter">
+          <a class="footerButton1" href="#">Home</a>
+          <a class="footerButton2" href="#">Mentions</a>
+          <a class="footerButton2" href="#">Conditions</a>
+          <a class="footerButton2" href="#">Contact</a>
+        </nav>
+        <button id="menu"><i class="fa-solid fa-bars"></i></button>
+        
+      
+      </footer>
 
   </div>
+
 </body>
 </html>
+
+
 
 
