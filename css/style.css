@@ -16,7 +16,7 @@ body{
     grid-template-rows: 1fr 0.4fr 5fr 0.85fr 0.3fr;
     grid-template-areas:
         "header header header header header header header"
-        "ad1 ad1 centerUp centerUp centerUp ad2 ad2"
+        "ad1 centerUp centerUp centerUp ad2 ad2"
         "ad1 ad1 arreyLeft centerDown arreyRight ad2 ad2"
         "ad1 ad1 noSpace1 centerDown noSpace2 ad2 ad2"
         "nav nav nav nav nav nav nav";
