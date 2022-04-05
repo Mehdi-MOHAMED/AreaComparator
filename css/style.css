@@ -4,34 +4,27 @@ html{
 }   
 
 body{
-    background-color: #fafafa;
+    background-color: #efefef;
     display: flex;
     flex-direction: column;
     color: #1d1f3a;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100%;
-}   
+}
 
 .container{
     display:grid;
-    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-columns: 2fr 1.5fr 3fr 1.5fr 2fr;
     grid-template-rows: 1.5fr 1.5fr 5fr 1.5fr 0.5fr;
     grid-template-areas:
-<<<<<<< HEAD
         "header header header header header"
         "bigSpace1 leftUp centerUp rightUp bigSpace2"
         "bigSpace1 leftDown centerCenter rightDown bigSpace2"
         "bigSpace1 smallSpace1 centerDown smallSpace2 bigSpace2"
         "footer footer footer footer footer";
-=======
-        "header header header header header header header"
-        "ad1 centerUp centerUp centerUp ad2 ad2"
-        "ad1 ad1 arreyLeft centerDown arreyRight ad2 ad2"
-        "ad1 ad1 noSpace1 centerDown noSpace2 ad2 ad2"
-        "nav nav nav nav nav nav nav";
->>>>>>> dev
     height:100vh;
-    grid-gap: 0.5rem;
+    grid-gap: 0.25rem;
 }
 
 header{
@@ -63,16 +56,6 @@ header{
     font-size: 15px;
 }
 
-main{
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80%;
-}
-
 #bigSpace1{
     grid-area: bigSpace1;
     width: 100%;
@@ -81,6 +64,7 @@ main{
 
 #leftUp{
     grid-area: leftUp;
+    background-color:#5e5d32;
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -88,8 +72,8 @@ main{
 }
 
 #leftUpDown{
+    background-color:#5b71eb;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -97,21 +81,28 @@ main{
 }
 
 .leftUpDownCenterCenter{
+    background-color:#fafafa;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba (0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba (0,0,0,0.75);
+    border-radius: 2px;
+    width: 38px;
+    height: 38px;
 }
 
 .material-icons-outlined{
+    display: none;
+}
+
+.material-icons-round{
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 36px;  /* Preferred icon size */
+  font-size: 24px;  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -119,7 +110,7 @@ main{
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  color: #005662;
+  color: #445963;
 
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
@@ -170,7 +161,7 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 98%;
     height: 80%;
 }
 
@@ -183,9 +174,30 @@ main{
     height: 50%;
 }
 
-.leftDownUpCenterContainerLeft i{
-    color: #005662;
-    font-size: 1px;
+.material-icons-searchLeft{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #445963;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 #leftDownUpCenterContainerCenter{
@@ -200,7 +212,7 @@ main{
     background-color: #b83f3f;
     border: none;
     width: 98%;
-    height: 40%;
+    height: 90%;
 }
 
 .leftDownUpCenterContainerRight{
@@ -213,9 +225,30 @@ main{
     height: 50%;
 }
 
-.leftDownUpCenterContainerRight{
-    color: #005662;
-    font-size: 1px;
+.material-icons-crossLeft{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #445963;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 #leftDownDown{
@@ -243,6 +276,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-size: 12px;
     width: 90%;
     height: 80%;
 }
@@ -257,7 +291,6 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 20%;
-    font-size: 1px;
     
 }
 
@@ -271,7 +304,6 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 20%;
-    font-size: 1px;
 }
 
 #leftDownDownContainerUp3{
@@ -284,7 +316,6 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 10%;
-    font-size: 1px;
 }
 
 #leftDownDownContainerUp4{
@@ -297,41 +328,47 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 30%;
-    font-size: 1px;
 }
 
 #leftDownDownContainerDown{
     background-color: #0f77ee;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 10px;
+    width: 98%;
     height: 10%;
 }
 
 #leftDownDownContainerDown1{
     background-color: #f79dca;
+    box-sizing: border-box;
     text-decoration: none;
+    border: 1px solid #005662;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    font-size: 10px;
+    margin: 2px;
+    width: 20%;
     height: 25px;
-    border: none;
-    font-size: 1px;
 }
 
 #leftDownDownContainerDown2{
     background-color: #f79dca;
+    box-sizing: border-box;
     text-decoration: none;
+    border: 1px solid #005662;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    font-size: 10px;
+    margin: 2px;
+    margin-right: 15px;
+    width: 20%;
     height: 25px;
-    border: none;
-    font-size: 1px;
 }
 
 #littleSpace1{
@@ -345,37 +382,215 @@ main{
     background-color: #ddb034;
     grid-area: centerUp;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+#centerUpContainer{
+    background-color: #c76c2f;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.centerUpContainerTextUp{
+    background-color: #668067;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 25%;
+}
+
+.centerUpContainerTextDown{
+    background-color: #667480;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 25%;
+}
+
+#centerUpContainer p{
+    font-size: 13px;
+    color: #005662;
+}
+
+#centerCenter{
+    background-color: #607477;
+    box-sizing: border-box;
+    grid-area: centerCenter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
-#centerCenter{
-    background-color: #607477;
-    grid-area: centerCenter;
+#centerCenterUp{
+    background-color: #3ec450;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 98%;
+    height: 90%;
+}
+
+#centerCenterDown{
+    background-color: #b7a3ec;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 6%;
+}
+
+.material-icons-littleButton{
+    
+    background-color: #faf8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 4%;
     height: 100%;
+}
+
+.material-icons-share.md-16{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #005662;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons-littleStar.md-20{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #005662;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons-fullScreen.md-20{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #005662;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 #centerDown{
     background-color: #ddb034;
     grid-area: centerDown;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100%;
 }
 
+#centerDownContainer{
+    background-color: #c76c2f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+#navMap{
+    background-color: #d4ccc7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    height: 90%;
+}
+
+.mapButton{
+    background-color: #fafafa;
+    color: #005662;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14%;
+    height: 75%;
+}
+
+.mapButton a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
 #rightUp{
     grid-area: rightUp;
+    background-color:#5e5d32;
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -383,8 +598,8 @@ main{
 }
 
 #rightUpDown{
+    background-color:#5b71eb;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -392,19 +607,47 @@ main{
 }
 
 .rightUpDownCenterCenter{
+    background-color:#fafafa;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px rgba (0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba (0,0,0,0.75);
+    border-radius: 2px;
+    width: 38px;
+    height: 38px;
 }
 
-.rightUpDownCenterCenter i{
-    font-size: 36px;
-    color: #f00606;
+.rightUpDownCenterCenter:hover {
+    background-color:#ebe85b;
+}
+
+.material-icons-star{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #445963;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 #rightDown{
@@ -456,9 +699,30 @@ main{
     height: 50%;
 }
 
-.rightDownUpCenterContainerLeft i{
-    color: #005662;
-    font-size: 1px;
+.material-icons-searchRight{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #445963;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 #rightDownUpCenterContainerCenter{
@@ -486,10 +750,30 @@ main{
     height: 50%;
 }
 
-.rightDownUpCenterContainerRight{
-    border-top: none;
-    color: #005662;
-    font-size: 1px;
+.material-icons-crossRight{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #445963;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 #rightDownDown{
@@ -517,6 +801,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-size: 12px;
     width: 90%;
     height: 80%;
 }
@@ -531,7 +816,6 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 20%;
-    font-size: 1px;
 }
 
 #rightDownDownContainerUp2{
@@ -544,7 +828,6 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 20%;
-    font-size: 1px;
 }
 
 #rightDownDownContainerUp3{
@@ -557,7 +840,6 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 10%;
-    font-size: 1px;
 }
 
 #rightDownDownContainerUp4{
@@ -570,41 +852,46 @@ main{
     padding-left: 5px;
     width: 90%;
     height: 30%;
-    font-size: 1px;
 }
 
 #rightDownDownContainerDown{
     background-color: #0f77ee;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 10px;
+    width: 98%;
     height: 10%;
 }
 
 #rightDownDownContainerDown1{
     background-color: #f79dca;
+    box-sizing: border-box;
     text-decoration: none;
+    border: 1px solid #005662;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    font-size: 10px;
+    margin: 2px;
+    width: 20%;
     height: 25px;
-    border: none;
-    font-size: 1px;
 }
 
 #rightDownDownContainerDown2{
     background-color: #f79dca;
+    box-sizing: border-box;
     text-decoration: none;
+    border: 1px solid #005662;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    margin: 2px;
+    margin-right: 15px;
+    width: 20%;
     height: 25px;
-    border: none;
-    font-size: 1px;
 }
 
 #littleSpace2{
@@ -645,9 +932,12 @@ footer{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 0.5em;
     width: 20%;
     height: 80%;
+}
+
+.footerButton1 p{
+    font-size: 10px;
 }
 
 .footerButton2{
@@ -657,33 +947,12 @@ footer{
     align-items: center;
     text-decoration: none;
     color: #fafafa;
-    font-size: 0.5em;
     width: 20%;
     height: 80%;
 }
 
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:550px){
-    .container{
-        grid-template-columns: 0.5fr 4fr 1fr 4fr 0.5fr;
-        grid-template-rows: 1fr 2.5fr 5fr 2fr 9fr 2.5fr;
-        grid-template-areas: 
-        "footer header header header"
-        "noSpace1 noSpace1 noSpace1 noSpace1"
-        "centerUp centerUp centerUp centerUp"
-        "centerDown centerDown centerDown centerDown"
-        "arreyLeft arreyLeft arreyRight arreyRight";
-        grid-gap: 0rem;
-    }
+.footerButton2 p{
+    font-size: 10px;
 }
 
 .footerButton1{
@@ -694,3 +963,380 @@ footer{
     display: none;
 }
 
+@media only screen and (max-width:1920px){
+    .container{
+    display:grid;
+    grid-template-columns: 1fr 2.5fr 5fr 2.5fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 5fr 1.5fr 0.5fr;
+    grid-template-areas:
+        "header header header header header"
+        "bigSpace1 leftUp centerUp rightUp bigSpace2"
+        "bigSpace1 leftDown centerCenter rightDown bigSpace2"
+        "bigSpace1 smallSpace1 centerDown smallSpace2 bigSpace2"
+        "footer footer footer footer footer";
+    height:100vh;
+    grid-gap: 0rem;
+    }
+
+    .header1{
+    width: 60%;
+    }
+
+    .header1 a{
+        text-decoration: none;
+        color: #fafafa;
+        font-size: 28px;
+    }
+
+    .com{
+        font-size: 12px;
+    }
+
+    .leftUpDownCenterCenter{
+    width: 32px;
+    height: 32px;
+    }
+
+    .material-icons-round{
+    font-size: 22px;
+    }
+
+    #leftDownDownContainerUp{
+        font-size: 9px;
+    }
+
+    #leftDownDownContainerDown1{
+        font-size: 9px;
+        width: 20%;
+        height: 22px;
+    }
+
+    #leftDownDownContainerDown2{
+        font-size: 9px;
+        margin-right: 8px;
+        width: 20%;
+        height: 22px;
+    }
+
+    #centerUpContainer p{
+        font-size: 10px;
+    }
+
+    #centerCenterDown{
+    height: 6%;
+    }
+
+    .material-icons-littleButton{
+    width: 10%;
+    }
+
+    .material-icons-share.md-16{
+    font-size: 14px;
+    }
+
+    .material-icons-littleStar.md-20{
+    font-size: 16px;
+    }
+
+    .material-icons-fullScreen.md-20{
+    font-size: 18px;
+    }
+
+    #navMap{
+        height: 80%;
+    }
+
+    .mapButton{
+        width: 22%;
+    }
+
+    .mapButton a{
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .rightUpDownCenterCenter{
+    width: 32px;
+    height: 32px;
+    }
+
+    .material-icons-star{
+    font-size: 22px;
+    }
+
+    #rightDownDownContainerUp{
+        font-size: 9px;
+    }
+
+    #rightDownDownContainerDown1{
+        font-size: 9px;
+        width: 20%;
+        height: 22px;
+    }
+
+    #rightDownDownContainerDown2{
+        font-size: 9px;
+        margin-right: 8px;
+        width: 20%;
+        height: 22px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .container{
+    display:grid;
+    grid-template-columns: 1fr 2.5fr 5fr 2.5fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 5fr 1.5fr 0.5fr;
+    grid-template-areas:
+        "header header header header header"
+        "bigSpace1 leftUp centerUp rightUp bigSpace2"
+        "bigSpace1 leftDown centerCenter rightDown bigSpace2"
+        "bigSpace1 smallSpace1 centerDown smallSpace2 bigSpace2"
+        "footer footer footer footer footer";
+    height:100vh;
+    grid-gap: 0rem;
+    }
+
+    #leftDownDownContainerDown1{
+    width: 28%;
+    }
+
+    #leftDownDownContainerDown2{
+    width: 28%;
+    }
+
+    #rightDownDownContainerDown1{
+    width: 28%;
+    }
+
+    #rightDownDownContainerDown2{
+    width: 28%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .container{
+    display:grid;
+    grid-template-columns: 1fr 2.5fr 5fr 2.5fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 5fr 1.5fr 0.5fr;
+    grid-template-areas:
+        "header header header header header"
+        "bigSpace1 leftUp centerUp rightUp bigSpace2"
+        "bigSpace1 leftDown centerCenter rightDown bigSpace2"
+        "bigSpace1 smallSpace1 centerDown smallSpace2 bigSpace2"
+        "footer footer footer footer footer";
+    height:100vh;
+    grid-gap: 0rem;
+    }
+
+    #leftDownDownContainerDown1{
+    width: 35%;
+    }
+
+    #leftDownDownContainerDown2{
+    width: 35%;
+    }
+
+    #rightDownDownContainerDown1{
+    width: 35%;
+    }
+
+    #rightDownDownContainerDown2{
+    width: 35%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr 3.5fr 1fr 3.5fr 1fr;
+        grid-template-rows: 1fr 2.5fr 6fr 2fr 8fr 2.5fr;
+        grid-template-areas: 
+        "footer header header header leftUp"
+        "bigSpace1 bigSpace1 bigSpace1 bigSpace1 bigSpace1"
+        "leftDown leftDown rightUp rightDown rightDown"
+        "centerUp centerUp centerUp centerUp centerUp"
+        "centerCenter centerCenter centerCenter centerCenter centerCenter"
+        "centerDown centerDown centerDown centerDown centerDown";
+        grid-gap: 0rem;
+    }
+
+    .header1{
+        width: 60%;
+    }
+
+    .header1 a{
+        text-decoration: none;
+        color: #fafafa;
+        font-size: 11px;
+    }
+
+    .com{
+        font-size: 6px;
+    }
+
+    #navBarfooter{
+        display: none;
+    }
+
+    #menu{
+        display: contents;
+        color: #fafafa;
+    }
+
+    #leftUp{
+        align-items: center;
+    }
+
+    #leftUpDown{
+        background-color:#005662;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .leftUpDownCenterCenter{
+        background-color:#005662;
+        border: none;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #fafafa;
+        border-radius: 50px;
+    }
+
+    .material-icons-round{
+        display: none;
+    }
+
+    .material-icons-outlined{
+        display: content;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 12px;  /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        color: #fafafa;
+
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+    }
+
+    .material-icons-searchLeft{
+    font-size: 10px;
+    }
+
+    .material-icons-crossLeft{
+    font-size: 10px;
+    }
+
+    #leftDownDownContainerUp{
+        font-size: 8px;
+    }
+
+    #leftDownDownContainerDown1{
+        font-size: 7px;
+        width: 30%;
+        height: 15px;
+    }
+
+    #leftDownDownContainerDown2{
+        font-size: 7px;
+        margin-right: 8px;
+        width: 30%;
+        height: 15px;
+    }
+
+    #rightUp{
+        align-items: center;
+    }
+
+    .rightUpDownCenterCenter{
+        width: 20px;
+        height: 20px;
+    }
+
+    .material-icons-star{
+    font-size: 17px;
+    }
+
+    .material-icons-searchRight{
+    font-size: 10px;
+    }
+
+    .material-icons-crossRight{
+    font-size: 10px;
+    }
+
+    #rightDownDownContainerUp{
+        font-size: 8px;
+    }
+
+    #rightDownDownContainerDown1{
+        font-size: 7px;
+        width: 30%;
+        height: 15px;
+    }
+
+    #rightDownDownContainerDown2{
+        font-size: 7px;
+        margin-right: 8px;
+        width: 30%;
+        height: 15px;
+    }
+
+    #centerUpContainer p{
+        font-size: 10px;
+    }
+
+    .material-icons-share.md-16{
+    font-size: 13px;
+    }
+
+    .material-icons-littleStar.md-20{
+    font-size: 14px;
+    }
+
+    .material-icons-fullScreen.md-20{
+    font-size: 16px;
+    }
+
+    #navMap{
+        background-color: #d4ccc7;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 98%;
+        height: 90%;
+    }
+
+    .mapButton{
+        background-color: #fafafa;
+        color: #005662;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 75%;
+    }
+
+    .mapButton a{
+        text-decoration: none;
+        font-size: 10px;
+    }
+}
