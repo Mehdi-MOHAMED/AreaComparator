@@ -1,4 +1,4 @@
 AreaComparator
 
-Color :
+liste des installations et leurs fonction :
 
